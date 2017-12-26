@@ -1,5 +1,3 @@
-import { create } from "domain";
-
 function createMarkup(data) {
   return data.map(album => `
   <div class="list-item">
