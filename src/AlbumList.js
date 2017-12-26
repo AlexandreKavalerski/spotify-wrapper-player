@@ -8,6 +8,8 @@ function createMarkup(data) {
     </div>
   </div>`).join('');
 }
+
+/* eslint no-param-reassign: 0 */
 export default function renderAlbums(data, element) {
   const markup = createMarkup(data);
   element.innerHTML = markup;
