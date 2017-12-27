@@ -4,7 +4,6 @@ import renderAlbumInfo from '../src/AlbumInfo';
 
 
 describe('AlbumInfo', () => {
-
   const data = {
     album_type: 'album',
     artists: [{
@@ -40,5 +39,10 @@ describe('AlbumInfo', () => {
     const element = document.createElement('div');
     renderAlbumInfo(data, element);
     expect(element.innerHTML).to.be.eql(markup);
+  });
+
+  it('should return the data', () => {
+    const element2 = document.createElement('div');
+    expect(renderAlbumInfo(data, element2)).to.be.eql(data);
   });
 });
