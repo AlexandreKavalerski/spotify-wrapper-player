@@ -5,9 +5,6 @@ const albumList = document.getElementById('album-list');
 const searchInput = document.getElementById('search-input');
 const searchForm = document.getElementById('search-form');
 
-// const albums = spotify.search.albums('Charlie Brown Jr');
-// albums.then(data => renderAlbums(data.albums.items, albumList));
-
 export default function searchEnterTrigger() {
   searchForm.addEventListener('submit', (e) => {
     e.preventDefault();
