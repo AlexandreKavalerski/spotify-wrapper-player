@@ -1,6 +1,8 @@
 const albumTracks = document.getElementById('album-musics');
 let audioObject = null;
 
+/* global Audio */
+
 export default function playlistTrigger() {
   albumTracks.addEventListener('click', (e) => {
     const target = e.target.parentNode;
